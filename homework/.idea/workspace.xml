@@ -20,23 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d02cc65-689a-41c0-9117-ef5aeb24b328" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Jump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Treadmill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java2/lesson1/Wall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/lesson2/MyArrayDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/lesson2/MyArraySizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java2/lesson2/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../out/production/GeekBrains/homework/lesson2/lesson2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/GeekBrains/homework/lesson2/lesson2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +79,9 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="361" y="180" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.984@0.0.1280.984" timestamp="1611238294650" />
-    <state x="420" y="246" key="FileChooserDialogImpl" timestamp="1611556211151">
+    <state x="420" y="246" key="FileChooserDialogImpl" timestamp="1612119097811">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1611556211151" />
+    <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1612119097811" />
   </component>
 </project>
