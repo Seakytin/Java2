@@ -17,6 +17,18 @@ public class Test {
         }
         System.out.println(hashSet);
         System.out.println(hm);
+
+
+        PhoneBook phoneBook = new PhoneBook();
+
+        phoneBook.add("+79241112232", "Иванов");
+        phoneBook.add("+79241112233", "Иванов");
+        phoneBook.add("+79241112234", "Петров");
+        phoneBook.add("+79241112235", "Сидоров");
+
+        phoneBook.info();
+
+       // System.out.println(" У Иванова номера: " + phoneBook.get("Иванов"));
     }
 }
 
