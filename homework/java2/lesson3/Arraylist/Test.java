@@ -1,4 +1,4 @@
-package homework.java2.lesson3;
+package homework.java2.lesson3.Arraylist;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -26,14 +26,17 @@ public class Test {
         Contact c3 = new Contact("Herbert Schildt", "1236");
         Contact c4 = new Contact("Joshua Bloch", "1237");
         Contact c5 = new Contact("Joshua Bloch", "1237");
+        Contact c6 = new Contact("Cay Horstmann", "1237");
 
         phoneBook.add(c1);
         phoneBook.add(c2);
         phoneBook.add(c3);
         phoneBook.add(c4);
         phoneBook.add(c5);
+        phoneBook.add(c6);
 
         phoneBook.getByName("Joshua Bloch");
+        phoneBook.getByName("Cay Horstmann");
 
        // System.out.println(" У Иванова номера: " + phoneBook.get("Иванов"));
     }

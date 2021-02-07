@@ -1,21 +1,24 @@
 package homework.java2.lesson3;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class PhoneBook {
-    private HashMap<String, ArrayList<String>> phoneBook = new HashMap<>();
 
-    public void add(String tel, String name) {
-        ArrayList<String> telList = phoneBook.get(name);
-        if (phoneBook.containsKey(name)){
-            telList.add(tel);
+    private  HashMap<String, String> hashMap = new HashMap();
+
+    public void add(Contact contact) {
+        if (!hashMap.containsKey(contact.getName())) {
+            hashMap.put(contact.getName(), contact.getTel());
         } else {
-            telList = new ArrayList<>();
-            telList.add(tel);
-            phoneBook.put(name, telList);
+            if (hashMap.get(contact.getName()).contains(contact.getTel())) {
+                System.out.println("такой номер для " + contact.getName() + " уже есть!");
+            } else {
+                hashMap.replace(contact.getName(), hashMap.get(contact.getName()), hashMap.get(contact.getName()) + ", " + contact.getTel());
+            }
         }
     }
-    public void info() {
-        System.out.println(phoneBook);
+
+    public void getByName(String name) {
+        System.out.println(name + ",  " + hashMap.get(name));
     }
+
 }
