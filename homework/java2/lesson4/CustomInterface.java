@@ -1,6 +1,6 @@
-package homework.java2.lesson4;
-
-public interface CustomInterface<Integer> {
-    int operation (Integer n, java.lang.Integer list);
-
-}
+//package homework.java2.lesson4;
+//
+//public interface CustomInterface {
+//    int operation (Integer n, Integer [5]);
+//
+//}
