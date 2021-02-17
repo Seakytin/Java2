@@ -3,6 +3,8 @@ package homework.java2.lesson6.client;
 import java.io.*;
 import java.net.Socket;
 
+
+
 class Client {
 
     private static Socket clientSocket;
@@ -18,39 +20,37 @@ class Client {
             in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
             Thread input = new Thread(() -> {
+                while (true) {
+                    try {
 
-                try {
-                    while (true) {
                         String word = reader.readLine();
-                        if (word.equalsIgnoreCase("finish")) {
-                            System.out.println("Закончили");
-                            clientSocket.close();
-                            in.close();
-                            out.close();
-                            break;
-                        }
                         out.write(word + "\n");
                         out.flush();
+                        if (word.equalsIgnoreCase("finish")) {
+                            System.out.println("Закончили");
+                            break;
+                        }
+                    } catch (IOException e) {
+                        System.err.println(e);
                     }
-                } catch (IOException e) {
-                    System.err.println(e);
                 }
-            });
-            Thread output = new Thread(() -> {
 
-                try {
-                    while (true) {
-                        String serverWord = in.readLine();
-                        System.out.println(serverWord);
-                    }
-                } catch (IOException e) {
-                    System.err.println(e);
-                }
             });
+            input.setDaemon(true);
             input.start();
-            output.start();
+            try {
+                while (true) {
+                    String serverWord = null;
+                    // try {
+                    serverWord = in.readLine();
+                    System.out.println(serverWord);
+                }
+
+            } catch (IOException e) {
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }

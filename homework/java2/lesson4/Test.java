@@ -13,21 +13,30 @@
 ////        System.out.println(search(-10, list1));
 //
 //        Integer[] list1 = {1, 2, 3, 4, 5};
-//        Integer[] list2 = new {list1};
+//        //Integer[] list2 = new {list1};
 //
 //        search(list1, n -> {
-//                    if ( != 1)
+//
+//            for (int i = 0; i <list1.length ; i++) {
+//                if (list1[i] == null)
+//            {
+//                System.out.println(-1);
+//            }
+//                else {
+//                    System.out.println(1);
+//                }
+//            }
 //
 //                });
-//CustomInterface customInterface;
-//customInterface.operation(1, );
+////CustomInterface customInterface;
+////customInterface.operation(1, 2 );
 //
 //
 //    }
 //
-//    public static void search(Integer n, Integer[] list) {
+//        public static void search(Integer n, Integer[] list) {
 //        CustomInterface customInterface;
 //
 //        }
 //    }
-//}
+//
