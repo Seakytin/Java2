@@ -76,9 +76,9 @@ public class ClientHandler {
 
                 if (messageFromClient.startsWith("/w")) {
                     String [] arr = messageFromClient.split(" ", 3);
-                    myServer.privateMessage(this, arr[1], name + arr[2]);
+                    myServer.privateMessage(this, arr[1], name + ": " +  arr[2]);
                 }
-                if (messageFromClient.equals("/end")) {
+                if (messageFromClient.trim().startsWith("/end")) {
                     return;
                 }
             }else {
