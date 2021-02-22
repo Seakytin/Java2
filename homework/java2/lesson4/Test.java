@@ -9,13 +9,16 @@
 //
 //public class Test {
 //    public static void main(String[] args) {
+//
+//        //MyLamda lamda;
+//       // lamda = n + j;
 //        //        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 ////        System.out.println(search(-10, list1));
 //
-//        Integer[] list1 = {1, 2, 3, 4, 5};
-//        //Integer[] list2 = new {list1};
 //
-//        search(list1, n -> {
+//        //Integer[] list2 = new {list1};
+//        Integer[] list1 = {1, 2, 3, 4, 5};
+//        search(1 [2] -> {
 //
 //            for (int i = 0; i <list1.length ; i++) {
 //                if (list1[i] == null)
