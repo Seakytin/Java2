@@ -1,4 +1,4 @@
-package homework.java2.lesson7.serverside.service;
+package homework.java2.lesson8.serverside.service;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -14,6 +14,7 @@ public class ClientHandler {
     private DataOutputStream dos;
 
     private String name;
+    private boolean isAuthorized;
 
 
 
@@ -37,6 +38,16 @@ public class ClientHandler {
 
             }).start();
 
+            new Thread(() -> {
+                try {
+                    Thread.sleep(120000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                if (!isAuthorized) {
+                    closeConnection();
+                }
+            }).start();
 
         } catch (IOException e) {
             closeConnection();
@@ -54,6 +65,7 @@ public class ClientHandler {
                         .getNickByLoginAndPassword(arr[1], arr[2]);
                 if (nick != null) {
                     if (!myServer.isNickBusy(nick)) {
+                        isAuthorized = true;
                         sendMessage("/authok " + nick);
                         name = nick;
                         myServer.broadcastMessage("Hello " + name);
@@ -62,9 +74,11 @@ public class ClientHandler {
                     } else {
                         sendMessage("Nick is busy");
                     }
+                } else {
+                    sendMessage("Wrong login and password");
                 }
             } else {
-                sendMessage("Wrong login and password");
+                sendMessage("Your command will be need start with /auth");
             }
         }
     }
@@ -73,20 +87,25 @@ public class ClientHandler {
         while (true) {
             String messageFromClient = dis.readUTF();
             System.out.println(name + " send message " + messageFromClient);
-            if  (messageFromClient.trim().startsWith("/")) {
+            if (messageFromClient.trim().startsWith("/")) {
 
                 if (messageFromClient.startsWith("/w")) {
                     String [] arr = messageFromClient.split(" ", 3);
-                    myServer.privateMessage(this, arr[1], name + ": " +  arr[2]);
+                    myServer.privateMessage(this, arr[1], name + ": " + arr[2]);
                 }
+
+                if (messageFromClient.trim().startsWith("/list")) {
+                    myServer.getOnlineUsersList(this);
+                }
+
                 if (messageFromClient.trim().startsWith("/end")) {
                     return;
                 }
-            }else {
-                myServer.broadcastMessage(name + ": " + messageFromClient);}
-
+            } else {
+                myServer.broadcastMessage(name + ": " + messageFromClient);
             }
         }
+    }
 
     public void sendMessage(String message) {
         try {

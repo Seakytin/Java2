@@ -1,4 +1,6 @@
 //package homework.java2.lesson4;
+
+import org.w3c.dom.ls.LSOutput;
 //
 //import java.lang.reflect.Array;
 //import java.util.ArrayList;
@@ -8,38 +10,21 @@
 //import java.util.function.Predicate;
 //
 //public class Test {
+//
+//
 //    public static void main(String[] args) {
 //
-//        //MyLamda lamda;
-//       // lamda = n + j;
-//        //        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-////        System.out.println(search(-10, list1));
-//
-//
-//        //Integer[] list2 = new {list1};
-//        Integer[] list1 = {1, 2, 3, 4, 5};
-//        search(1 [2] -> {
-//
-//            for (int i = 0; i <list1.length ; i++) {
-//                if (list1[i] == null)
-//            {
-//                System.out.println(-1);
-//            }
-//                else {
-//                    System.out.println(1);
-//                }
-//            }
-//
-//                });
-////CustomInterface customInterface;
-////customInterface.operation(1, 2 );
-//
-//
+// //       CustomInterface customInterface = (n, list) -> search(n=1, list=Integer[]{1,3,2,1,4});
+// //       System.out.println(customInterface);
+// //   }
+////
+// //   private static int search(Integer n, Integer[] list) {
+// //       list = new Integer[]{};
+// //       if (list[0] == null) {
+// //           System.out.println(-1);
+// //       }
+////
+// //       return list[0];
 //    }
 //
-//        public static void search(Integer n, Integer[] list) {
-//        CustomInterface customInterface;
-//
-//        }
-//    }
-//
+//}
