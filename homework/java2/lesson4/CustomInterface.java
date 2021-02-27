@@ -1,5 +1,8 @@
-//package homework.java2.lesson4;
-//
-//public interface CustomInterface {
-//    int search (Integer [] list);
-//}
+package homework.java2.lesson4;
+
+@FunctionalInterface
+public interface CustomInterface {
+
+    int operation(int b, int [] a);
+
+}
